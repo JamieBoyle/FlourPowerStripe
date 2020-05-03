@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buy-button {
+  background-color:lightcoral;
+
+
+}
+
+.product-card {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color:black;
+  border-style: solid;
+  padding:20px;
+  margin:20px;
+  width:300px;
+  display: inline-block;
+ 
+}
+
+
+
+
+/**
+* Shows how you can use CSS to style your Element's container.
+* These classes are added to your Stripe Element by default.
+* You can override these classNames by using the options passed
+* to the CardElement component.
+* https://stripe.com/docs/js/elements_object/create_element?type=card#elements_create-options-classes
+*/
+
+.StripeElement {
+  height: 40px;
+  padding: 10px 12px;
+  width: 100%;
+  color: #32325d;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.CheckoutForm {
+  border:1px solid;
+  border-color:black;
+  width:500px;
+  padding:40px; /*total hack */
+}
