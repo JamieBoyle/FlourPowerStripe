@@ -35,7 +35,7 @@ It also allows you to set the transaction log file location where a history of p
 
 ### Building the frontend
 ```
->> cd ./client/
+>> cd ./client/react/
 >> npm install
 >> npm run-script build
 ```
@@ -44,15 +44,16 @@ It also allows you to set the transaction log file location where a history of p
 ### Setting up the server
 
 ```
+>> cd ./server/node/
 >> npm install
->> npm run
+>> npm start
 
 ```
 
 
 ### View in your browser
 
-It should now appear on https://localhost:4242
+It should now appear on http://localhost:4242
 
 
 
@@ -61,6 +62,8 @@ It should now appear on https://localhost:4242
 You should be presented with a very basic site with some details about the product and the ability to pay.
 
 The simplest test card for checkout is with 4242 4242 4242 4242 (with the other fields being flexible).
+
+When a payment is successful, a popup will appear (a browser alert), but nothing else will clear.
 
 
 If you want to test the webhooks and log of transactions, then you should follow the installation and running steps as per https://stripe.com/docs/payments/handling-payment-events.  In summary:
